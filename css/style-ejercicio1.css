@@ -9,6 +9,7 @@ h1{
 main ul{
     list-style: none;
     font-size: 12px;
+    padding-left: 0;
 }
 .footer1{
     display: flex;
@@ -19,5 +20,4 @@ main ul{
 }
 .lista{
     display: flex;
-    justify-content: left;
 }
