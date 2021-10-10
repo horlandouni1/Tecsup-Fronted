@@ -24,9 +24,11 @@
         <section class="home">
             <h2>HOME</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed luctus donec et. Mi, et, volutpat sollicitudin sit sed tincidunt libero ac suscipit. Fermentum mattis cras in massa commodo rhoncus. Metus felis consectetur feugiat diam vel non ut quis. Proin justo amet, tempor viverra sed elementum. Non orci accumsan sed commodo quam blandit ultricies ac aliquam. Nulla euismod tempor consequat id pulvinar in cursus commodo.</p>
-            <img src="./image/image1.jpg" alt="">
-            <img src="./image/image2.jpg" alt="">
-            <img src="./image/image3.jpg" alt="">
+            <div class="images">
+                <img src="./image/image1.jpg" alt="">
+                <img src="./image/image2.jpg" alt="">
+                <img src="./image/image3.jpg" alt="">
+            </div>
         </section>
         <section class="servicios">
             <h2>SERVICIOS</h2>
@@ -34,9 +36,11 @@
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed luctus donec et. Mi, et, volutpat sollicitudin sit sed tincidunt libero ac suscipit. Fermentum mattis cras in massa commodo rhoncus. Metus felis consectetur feugiat diam vel non ut quis. Proin justo amet, tempor viverra sed elementum. Non orci accumsan sed commodo quam blandit ultricies ac aliquam. Nulla euismod tempor consequat id pulvinar in cursus commodo.
             </p>
-            <img src="./image/image4.png" alt="">
-            <img src="./image/image5.jpg" alt="">
-            <img src="./image/image6.jpg" alt="">
+            <div class="images">
+                <img src="./image/image4.png" alt="">
+                <img src="./image/image5.jpg" alt="">
+                <img src="./image/image6.jpg" alt="">
+            </div>
             <ul>
                 <li class="s1">Servicio 1</li>
                 <li class="s2">Servicio 2</li>
@@ -48,9 +52,11 @@
             <h2 class="title-portafolio">PORTAFOLIO</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed luctus donec et. Mi, et, volutpat sollicitudin sit sed tincidunt libero ac suscipit. Fermentum mattis cras in massa commodo rhoncus. Metus felis consectetur feugiat diam vel non ut quis. Proin justo amet, tempor viverra sed elementum. Non orci accumsan sed commodo quam blandit ultricies ac aliquam. Nulla euismod tempor consequat id pulvinar in cursus commodo.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed luctus donec et. Mi, et, volutpat sollicitudin sit sed tincidunt libero ac suscipit. Fermentum mattis cras in massa commodo rhoncus. Metus felis consectetur feugiat diam vel non ut quis. Proin justo amet, tempor viverra sed elementum. Non orci accumsan sed commodo quam blandit ultricies ac aliquam. Nulla euismod tempor consequat id pulvinar in cursus commodo.</p>
-            <img src="./image/image7.jpg" alt="">
-            <img src="./image/image8.jpg" alt="">
-            <img src="./image/image9.jpg" alt="">
+            <div class="images">
+                <img src="./image/image7.jpg" alt="">
+                <img src="./image/image8.jpg" alt="">
+                <img src="./image/image9.jpg" alt="">
+            </div>
             <ul>
                 <li class="p1">Portafolio 1</li>
                 <li class="p2">Portafolio 2</li>
@@ -61,11 +67,38 @@
         <section class="contacto">
             <h2 class="title-contacto">CONTACTO</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed luctus donec et. Mi, et, volutpat sollicitudin sit sed tincidunt libero ac suscipit. Fermentum mattis cras in massa commodo rhoncus. Metus felis consectetur feugiat diam vel non ut quis. Proin justo amet, tempor viverra sed elementum. Non orci accumsan sed commodo quam blandit ultricies ac aliquam. Nulla euismod tempor consequat id pulvinar in cursus commodo.</p>
-            <form action="">
-                <input type="text" placeholder="Nombre y apellido">
-                <br>
-                <textarea name="texto" id="texto" cols="30" rows="10" placeholder="Detalle" minlength="30" maxlength="140"></textarea>
-                <br>
+            <form action="post">
+                <div class="formulary">
+                    <label for="nombre">Nombre: </label>
+                    <input id="nombre" name="Nombre" type="text" placeholder="Nombre">
+                </div>
+                <div class="formulary">
+                    <label for="apellido">Apellido: </label>
+                    <input id="apellido" name="apellido" type="text" placeholder="Apellido">
+                </div>
+                <div class="formulary">
+                    <label for="correo">Correo:  </label>
+                    <input id="correo" type="email" name="correo" placeholder="Ingrese su correo">
+                </div>
+                <div class="formulary">
+                    <label for="numero">Celular: </label>
+                    <input id="numero" type="number" name="numero" placeholder="Ingrese su celular">
+                </div>
+                <div class="formulary">
+                    <label for="pais">Pais</label>
+                    <select name="pais" id="pais">
+                        <option value="" disabled selected>Seleccione un pais</option>
+                        <option value="Peru">Peru</option>
+                        <option value="Chile">Chile</option>
+                        <option value="Colombia">Colombia</option>
+                        <option value="Venezuela">Venezuela</option>
+                        <option value="Ecuador">Ecuador</option>
+                    </select>
+                </div>
+                <div class="formulary">
+                    <label for="texto">Ingrese un comentario: </label>
+                    <textarea name="texto" id="texto" cols="30" rows="10" placeholder="Detalle" minlength="30" maxlength="140"></textarea>
+                </div>
                 <button>Enviar</button>
             </form>
         </section>

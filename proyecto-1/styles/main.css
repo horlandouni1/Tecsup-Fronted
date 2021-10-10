@@ -2,6 +2,9 @@ html{
     font-family: Arial, Helvetica, sans-serif;
 
 }
+
+/* Estilos del Header */
+
 header{
     display: flex;
     justify-content:space-between;
@@ -12,23 +15,26 @@ header{
     height: 99px;
     align-items: center;
 }
-nav {
+header nav {
     display: flex;
     justify-content:space-between;
     align-items: center;
 }
-nav ul{
+header ul{
     display: flex;
     list-style: none;
 }
-nav li{
+header li{
     margin-right: 10px;
 }
-nav a{
+header nav a{
     text-decoration: none;
     color: #FFFFFF;
     font-size: 18px;
 }
+
+/* Estilos del main */
+
 main{
     padding: 0 15px;
     padding-top: 30px;
@@ -43,17 +49,17 @@ main h2{
 main img{
     margin-right: 15px;
 }
-.title-portafolio{
+main .title-portafolio{
     color: #AAD206;
 }
-.title-contacto{
+main .title-contacto{
     color: #06D2C6;
 }
-p{
+main p{
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
-
+    margin-bottom: 30px;
 }
 main ul{
     padding: 0 15px;
@@ -61,49 +67,76 @@ main ul{
     line-height: 44px;
     font-size: 18px;
 }
-.home p,img{
+main .images{
+    display: flex;
+    justify-content: center;
     margin-bottom: 30px;
 }
-
-.servicios p,img{
-    margin-bottom: 30px;
-}
-.servicios ul{
+main .servicios ul{
     margin-bottom: 20px;
 }
-.s1{
+main .s1{
     color: #FF0000;
 }
-.s2{
+main .s2{
     color: #3B06D2;
 }
-.s3{
+main .s3{
     color: #AAD206;
 }
-.s4{
+main .s4{
     color: #06D2C6;
 }
-.portafolio p,img{
+main .portafolio p,{
     margin-bottom: 30px;
 }
-.portafolio ul{
+main .portafolio ul{
     margin-bottom: 20px;
 }
-.p1{
+main .p1{
     color: #AAD206;
 }
-.p2{
+main .p2{
     color: #FF0000;
 }
-.p3{
+main .p3{
     color: #3B06D2;
 }
-.p4{
+main .p4{
     color: #06D2C6;
 }
-.contacto p{
-    margin-bottom: 15px;
+main .contacto textarea{
+    width: 1339px;
+    height: 214px;
+    border: 1px solid #000000;
+    margin-bottom: 10px;
 }
+main .contacto button{
+    width: 195px;
+    height: 73px;
+    border: 1px solid #22A900;
+    color: #22A900;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+main .formulary{
+    display: flex;
+    width: 1000px;
+    height: auto;
+    border: 1px solid #000000;
+    margin-bottom: 10px;
+    padding: 15px,0,15px,15px;
+    font-size: 16px;
+    align-items: center;
+}
+main input{
+    margin-left: 20px;
+    width: 300px;
+    height: 40px;
+    font-size: 16px;
+}
+/* Estilos del footer */
 footer{
     display: flex;
     background-color:#00AF1C;
