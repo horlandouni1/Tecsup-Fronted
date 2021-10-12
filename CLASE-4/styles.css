@@ -1,0 +1,147 @@
+html{
+    display: flex;
+    justify-content: center;
+    background: #FFE7E7;;
+}
+body{
+    width: 600px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid black;
+    background-color: #FFFFFF;
+}
+header h1{
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    border: ;
+}
+main{
+    width: 504px;
+    margin: 0 auto;
+}
+main button{
+    display: flex;
+    width: 97px;
+    height: 42px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 74px;
+}
+main img{
+    border-radius: 20px;
+}
+.section1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section1 img{
+    background-color: #ffe7e7;;
+}
+.section1 h2{
+    display: flex;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 49px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.section1 .paragraph1{
+    display: flex;
+    width: 504px;
+    height: 72px;
+    margin: 25px auto 24px;
+    font-size: 19px;
+    line-height: 24px;
+    text-align: center;
+    align-items: center;
+}
+
+.section2{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+.section2 div{
+    margin-left: 24px;
+}
+.section2 h3{
+    font-size: 27px;
+    line-height: 24px;
+    font-weight: bold;
+}
+.section2 p{
+    font-size: 19px;
+    line-height: 24px;
+}
+.section3{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+.section3 div{
+    margin-right: 24px;
+}
+.section3 h3{
+    font-size: 27px;
+    line-height: 24px;
+    font-weight: bold;
+}
+.section3 p{
+    font-size: 19px;
+    line-height: 24px;
+}
+.section4{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+.section4 div{
+    margin-left: 24px;
+}
+.section4 h3{
+    font-size: 27px;
+    line-height: 24px;
+    font-weight: bold;
+}
+.section4 p{
+    font-size: 19px;
+    line-height: 24px;
+}
+.section5{
+    font-size: 20px;
+}
+.section5 div{
+    margin-top: 40px;
+    width: 504px;
+    height: 2px;
+    border-bottom: 3px solid black;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 18.52px;
+}
+footer a{
+    color: black;
+}
+footer h2{
+    font-size: 26.6341px;
+    line-height: 36px;
+}
+footer .logos{
+    margin-left: 20px;
+}
+.logos img{
+    margin-right: 20px;
+}
+

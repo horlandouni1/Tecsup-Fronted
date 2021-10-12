@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Agarra el primer elemento li de un ul -->
+    <style>
+        ul>li{
+            border-top: 5px solid red;
+        }
+    </style>
+    <ul>
+        <li></li>
+        <li>
+            <ol>
+                <li></li>
+                <li></li>
+            </ol>
+        </li>
+        <li></li>
+    </ul>
+    <!-- Aplica estilo al parrafo que va seguido de un h2 -->
+    <style>
+        h2+p{
+            color:gray
+        }
+    </style>
+    <h2>Titulo1</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, consequatur?</p>
+    <p>Lorem ipsum dolor sit.</p>
+    <h2>Titulo2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti magnam architecto eligendi at eos possimus fuga officiis quod. Laborum dolore amet et, voluptatem eaque autem, ullam dignissimos deserunt earum nihil consequatur?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia libero, error eius ea ab nemo inventore sequi commodi, porro obcaecati expedita unde ex animi quae perferendis mollitia, odit aliquam voluptatem!</p>
+    <!-- Aplica estilo a todos los parrafos seguidos de un h3 -->
+    <style>
+        h3~p{
+            color: green;
+        }
+    </style>
+    <h3>titulo3</h3>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit quaerat nihil quae enim!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione voluptatibus inventore molestiae tempore aliquid dicta.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga veritatis blanditiis ipsam voluptatum laborum hic laboriosam nostrum. Eius, perferendis! Ullam illo esse possimus quae!</p>
+    <h3>Titulo4</h3>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum et illum veniam?</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+
+</body>
+</html>
