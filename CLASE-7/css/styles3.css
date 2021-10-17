@@ -34,7 +34,7 @@ header ul{
     list-style: none;
 }
 header li{
-    margin-right: 20px;
+    margin-right: 2rem;
 }
 header a{
     color: #FFFFFF;
@@ -55,14 +55,14 @@ main .photo{
     line-height: 7.5rem;
 }
 .photo div{
-    width: 25%;
+    width: 360px;
     height: 117px;
     font-size: 3.6rem;
     padding: 16px;
     position:absolute;
     background: rgba(114, 153, 254, 0.5);
-    left: 50px;
-    bottom: 156px;
+    left: 6%;
+    bottom: 25%;
 }
 main .my-skills{
     display: flex;
@@ -259,4 +259,69 @@ footer{
 footer div{
     font-size: 1.4rem;
     line-height: 1.6rem;
+}
+@media (max-width:770px){
+    header ul{
+        display: block;
+        list-style: none;
+    }
+}
+@media (max-width:400px){
+    header{
+        display: flex;
+        flex-wrap: wrap;
+        height: 250px;
+    }
+    header ul{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .photo div{
+        width: 90%;
+        height: auto;
+        text-align: center;
+    }
+}
+@media (max-width:650px){
+    main .my-skills{
+        height: 750px;
+    }
+    .container-skills .container-skill1{
+        width: 100%;
+    }
+    .container-skills{
+        margin-top: 40px;
+        margin-right: 0;
+    }
+    main .services{
+        height: 850px;
+    }
+    .container-services div{
+        width: 100%;
+    }
+    main .briefcase{
+        height: 950px;
+    }
+    main .clients div{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .clients img{
+        margin-bottom: 10px;
+    }
+}
+@media (max-width:475px){
+    main .clients{
+        height: 410px;
+    }
+    main .contact{
+        height: 700px;
+    }
+    .contact input{
+        width: 100%;
+    }
+    .contact button{
+        width: 50%;
+    }
 }
