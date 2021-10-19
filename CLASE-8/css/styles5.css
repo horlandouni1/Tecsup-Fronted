@@ -1,13 +1,15 @@
 *{
     box-sizing: border-box;
 }
+html{
+    font-size: 14px;
+}
 body{
     display: flex;
     margin: 0;
     padding: 0;
     background: #E5E5E5;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
     justify-content: center;
     font-weight: bold;
 }
@@ -40,7 +42,7 @@ header li{
 }
 header a{
     color: inherit;
-    font-size: 1.4rem;
+    font-size: 0.9375rem;
     text-decoration: none;
 }
 main{
@@ -53,7 +55,7 @@ main{
 }
 .seeker{
     display: flex;
-    width: 57.5rem;
+    width: 75%;
     height: 2.6875rem;
     margin: 0 auto;
     border: 1px solid #D0D0D0;
@@ -61,6 +63,7 @@ main{
     align-items: center;
     justify-content: space-between;
     padding: 0 0.625rem;
+    margin-top: 10px;
 }
 .seeker input{
     width: 95%;
@@ -74,7 +77,7 @@ main{
 }
 .container1{
     display: flex;
-    width: 57.5rem;
+    width: 75%;
     margin: 0 auto;
     justify-content:space-between;
     margin-top: 2.25rem;
@@ -84,11 +87,14 @@ main{
 }
 .python,.react,.amazon{
     height: 6.375rem;
-    width: 24.5625rem;
+    width: 100%;
 }
 .angular{
-    width: 31.6875rem;
+    width: 49%;
     height: 21.625rem;
+}
+.angular2{
+    width: 49%;
 }
 .frontend1{
     display: flex;
@@ -131,16 +137,18 @@ main{
     position: absolute;
     font-size: 1.75rem;
     line-height: 2.0625rem;
-    top: 4.625rem;
-    left: 0.625rem;
+    margin-bottom: 0.875rem;
+    top: 21%;
+    left: 1.97%;
 }
 .angular p{
     position: absolute;
     font-size: 0.875rem;
     line-height: 1.375rem;
     font-weight: normal;
-    top: 7.5625rem;
-    left: 0.8125rem;
+    top: 35%;
+    left: 1.97%;
+    padding-right: 1.25rem;
 }
 .angular .autor{
     position: absolute;
@@ -156,17 +164,18 @@ main{
     font-size: 11px;
     line-height: 11px;
     right: 0.8125rem;
-    bottom: 0.5rem
+    bottom: 0.5rem;
 }
 .container1 .python,.react,.amazon{
     position: relative;
     margin-bottom: 1.1875rem;
+    height: 6.375rem;
 }
 .python h2,.react h2,.amazon h2{
     position: absolute;
     font-size: 1.125rem;
     line-height: 1.3125rem;
-    top: 1.8125rem;
+    top: 18px;
     left: 1.0625rem;
 }
 .python p,.react p, .amazon p{
@@ -174,7 +183,7 @@ main{
     font-size: 0.6875rem;
     line-height: 1rem;
     font-weight: normal;
-    top: 3.625rem;
+    top: 3.125rem;
     left: 1.0625rem;
 }
 .todos{
@@ -184,12 +193,13 @@ main{
     line-height: 1.625rem;
     color: #000000;
     align-self:flex-start;
-    left: 17.5rem;
+    left: 15%;
 
 }
 .container2{
     display: grid;
-    grid-template-columns: 24.5625rem 24.5625rem;
+    width: 70%;
+    grid-template-columns: 1fr 1fr ;
     gap: 1.25rem;
 }
 footer{
@@ -204,4 +214,54 @@ footer{
     margin-top: 0.3125rem;
     padding-left: 2.1875rem;
     padding-right: 3.25rem;
+}
+@media (max-width:1160px){
+    .angular h2{
+        top:40px;
+    }
+}
+@media (max-width:815px){
+    main .container1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    main .angular{
+        margin-bottom:1.1875rem;
+    }
+    main .angular, main .angular2{
+        width: 100%;
+    }
+}
+@media (max-width:805px){
+    .container2{
+        display: grid;
+        width: 70%;
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+    .python ,.react , .amazon {
+        width: 100%;
+}
+@media (max-width:650px){
+    .angular .autor,.angular .date{
+        bottom: 0.1rem
+    }
+    .angular h2 {
+        top: 9%;
+    }
+    .angular p{
+        top:30%;
+    }
+    header ul{
+        display: none;
+    }
+    .python h2,.react h2,.amazon h2{
+        top: 14px;
+        font-size: 12px;
+    }
+    .python p,.react p,.amazon p{
+        top: 35px;
+        font-size: 10px;
+    }
 }
