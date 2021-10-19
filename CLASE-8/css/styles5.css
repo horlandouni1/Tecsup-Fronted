@@ -63,7 +63,7 @@ main{
     align-items: center;
     justify-content: space-between;
     padding: 0 0.625rem;
-    margin-top: 10px;
+    margin-top: 0.625rem;
 }
 .seeker input{
     width: 95%;
@@ -175,7 +175,7 @@ main{
     position: absolute;
     font-size: 1.125rem;
     line-height: 1.3125rem;
-    top: 18px;
+    top: 1.125rem;
     left: 1.0625rem;
 }
 .python p,.react p, .amazon p{
@@ -210,14 +210,14 @@ footer{
     font-size: 0.6875rem;
     justify-content: space-between;
     align-items: center;
-    height: 76px;
+    height: 4.75rem;
     margin-top: 0.3125rem;
     padding-left: 2.1875rem;
     padding-right: 3.25rem;
 }
 @media (max-width:1160px){
     .angular h2{
-        top:40px;
+        top:2.5rem;
     }
 }
 @media (max-width:815px){
@@ -257,11 +257,11 @@ footer{
         display: none;
     }
     .python h2,.react h2,.amazon h2{
-        top: 14px;
-        font-size: 12px;
+        top: 0.875rem;
+        font-size: 0.75rem;
     }
     .python p,.react p,.amazon p{
-        top: 35px;
-        font-size: 10px;
+        top: 2.1875rem;
+        font-size: 0.625rem;
     }
 }
