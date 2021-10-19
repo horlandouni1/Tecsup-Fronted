@@ -1,0 +1,207 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background: #E5E5E5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    justify-content: center;
+    font-weight: bold;
+}
+main img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.wrapper{
+    width: 90%;
+}
+header{
+    display: flex;
+    width: 100%;
+    height: 4.5rem;
+    align-items: center;
+    justify-content: space-between;
+    background: #FFFFFF;
+    color: #242A59;
+    padding-left: 2.1875rem;
+    padding-right: 3.25rem;
+    margin-bottom: 0.3125rem;
+}
+header ul{
+    display: flex;
+    list-style: none;
+}
+header li{
+    margin-right: 2rem;
+}
+header a{
+    color: inherit;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+main{
+    display: flex;
+    width: 100%;
+    background: #FFFFFF;
+    color: #FFFFFF;
+    flex-direction: column;
+    align-items: center;
+}
+.seeker{
+    display: flex;
+    width: 57.5rem;
+    height: 2.6875rem;
+    margin: 0 auto;
+    border: 1px solid #D0D0D0;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0.625rem;
+}
+.seeker input{
+    width: 95%;
+    border: 0;
+    outline: none;
+}
+.seeker span{
+    display:inline-block;
+    width: 1.125rem;
+    height: 1.125rem;
+}
+.container1{
+    display: flex;
+    width: 57.5rem;
+    margin: 0 auto;
+    justify-content:space-between;
+    margin-top: 2.25rem;
+}
+.container1 .angular,.python,.react,.amazon{
+    position: relative;
+}
+.python,.react,.amazon{
+    height: 6.375rem;
+    width: 24.5625rem;
+}
+.angular{
+    width: 31.6875rem;
+    height: 21.625rem;
+}
+.frontend1{
+    display: flex;
+    position: absolute;
+    width: 4.875rem;
+    height: 1.875rem;
+    justify-content: center;
+    align-items: center;
+    top: 0.625rem;
+    right: 0.625rem;
+    font-size: 12px;
+    line-height: 14px;
+    background: #AD195A;
+    border-radius: 8px;
+}
+.frontend, .backend, .servidores{
+    display: flex;
+    position: absolute;
+    width: 4.25rem;
+    height: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    top: 0.3125rem;
+    right: 0.375rem;
+    font-size: 11px;
+    line-height: 13px;
+    background: #AD195A;
+    border-radius: 8px;
+}
+.frontend{
+    background: #26A6BE;
+}
+.backend{
+    background: #26A6BE;
+}
+.servidores{
+    background: #213576;
+}
+.angular h2{
+    position: absolute;
+    font-size: 1.75rem;
+    line-height: 2.0625rem;
+    top: 4.625rem;
+    left: 0.625rem;
+}
+.angular p{
+    position: absolute;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    font-weight: normal;
+    top: 7.5625rem;
+    left: 0.8125rem;
+}
+.angular .autor{
+    position: absolute;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 11px;
+    left: 0.8125rem;
+    bottom: 0.5rem
+}
+.angular .date{
+    position: absolute;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 11px;
+    right: 0.8125rem;
+    bottom: 0.5rem
+}
+.container1 .python,.react,.amazon{
+    position: relative;
+    margin-bottom: 1.1875rem;
+}
+.python h2,.react h2,.amazon h2{
+    position: absolute;
+    font-size: 1.125rem;
+    line-height: 1.3125rem;
+    top: 1.8125rem;
+    left: 1.0625rem;
+}
+.python p,.react p, .amazon p{
+    position: absolute;
+    font-size: 0.6875rem;
+    line-height: 1rem;
+    font-weight: normal;
+    top: 3.625rem;
+    left: 1.0625rem;
+}
+.todos{
+    position: relative;
+    font-weight: bold;
+    font-size: 1.375rem;
+    line-height: 1.625rem;
+    color: #000000;
+    align-self:flex-start;
+    left: 17.5rem;
+
+}
+.container2{
+    display: grid;
+    grid-template-columns: 24.5625rem 24.5625rem;
+    gap: 1.25rem;
+}
+footer{
+    display: flex;
+    width: 100%;
+    background: #FFFFFF;
+    color: #000000;
+    font-size: 0.6875rem;
+    justify-content: space-between;
+    align-items: center;
+    height: 76px;
+    margin-top: 0.3125rem;
+    padding-left: 2.1875rem;
+    padding-right: 3.25rem;
+}
