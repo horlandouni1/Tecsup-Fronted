@@ -44,7 +44,9 @@ header a{
 main .photo{
     display: flex;
     background-image: url('../img/photo.jpg');
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
     height: 525px;
     position: relative;
     justify-content: center;
@@ -260,32 +262,26 @@ footer div{
     font-size: 1.4rem;
     line-height: 1.6rem;
 }
+@media (max-width:913px){
+    main .briefcase{
+        height: 600px;
+    }
+    .clients img{
+        margin-right: 10px;
+    }
+}
 @media (max-width:770px){
     header ul{
         display: block;
         list-style: none;
     }
 }
-@media (max-width:400px){
-    header{
-        display: flex;
-        flex-wrap: wrap;
-        height: 250px;
-    }
-    header ul{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    .photo div{
-        width: 90%;
-        height: auto;
-        text-align: center;
-    }
-}
 @media (max-width:650px){
     main .my-skills{
         height: 750px;
+    }
+    main .my-skills>h2{
+        margin-bottom: 20px;
     }
     .container-skills .container-skill1{
         width: 100%;
@@ -295,7 +291,7 @@ footer div{
         margin-right: 0;
     }
     main .services{
-        height: 850px;
+        height: 870px;
     }
     .container-services div{
         width: 100%;
@@ -323,5 +319,28 @@ footer div{
     }
     .contact button{
         width: 50%;
+    }
+    .clients img{
+        margin-right:0px;
+    }
+}
+@media (max-width:400px){
+    header{
+        display: flex;
+        flex-wrap: wrap;
+        height: 250px;
+    }
+    header ul{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    header li{
+        margin-bottom: 10px;
+    }
+    .photo div{
+        width: 90%;
+        height: auto;
+        text-align: center;
     }
 }
