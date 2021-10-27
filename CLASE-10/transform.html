@@ -5,8 +5,95 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        a:link{
+            color:hotpink;
+        }
+        a:visited{
+            color: tomato;
+        }
+        a:hover{
+            background: palegoldenrod;
+        }
+        p:not(.maravillas){  /* con esto se aplica los estilos a todos los parrafos excepto a los que son de clase maravilla*/
+            color: lightsalmon;
+        }
+        .container div:nth-child(1){
+            background: blue;
+        }
+        .bloque1::before{
+            content: "Este es el before de bloque1";
+        }
+        .bloque2::after{
+            content: "este es el after de bloque2";
+        }
+        .shadow{
+            background: lightgray;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        .circle{
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(43,121,9,1) 35%, rgba(0,212,255,1) 100%);
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        .circle:hover{
+            transform: translate(20px,-20px);
+        }
+        .scale{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(43,121,9,1) 35%, rgba(187,8,210,1) 88%, rgba(0,212,255,1) 100%);
+        }
+        .scale:hover{
+            transform: scale(1.5);
+            /* transform :scale(1.2,0.8) aplica scale en las direcciones x y y */
+        }
+        .skew{
+            background: yellow;
+            width: 100px;
+            height: 100px;
+        }
+        .skew:hover{
+            transform: skew(20deg);
+            /* se rota 20 grados hacia la izquierza */
+        }
+        .rotate{
+            background: violet;
+            width: 100px;
+            height: 100px;
+            transform-origin: right top;
+            /* se cambia el origen de rotacion a derecha arriba
+            por defecto el origen de rotacion esta en el centro,
+            pero como ya vemos , se puede cambiar el origen de rotacion */
+        }
+        .rotate:hover{
+            transform: rotate(45deg);
+            /* se rota 20 grados */
+        }
+    </style>
 </head>
 <body>
-
+    <a href="/">Aqui</a>
+    <p>Hola que tal</p>
+    <p class="maravillas">estoy practicando</p>
+    <div class="container">
+        <div>Horlando</div>
+        <div>Horlando</div>
+        <div>Horlando</div>
+    </div>
+    <div class="bloque1">bloque1</div>
+    <div class="bloque2">bloque2</div>
+    <div class="shadow">
+        <div class="circle"></div>
+    </div>
+    <div class="scale"></div>
+    <div class="skew"></div>
+    <div class="rotate"></div>
 </body>
 </html>

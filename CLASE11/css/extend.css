@@ -1,0 +1,97 @@
+@charset "UTF-8";
+main, footer {
+  padding: 20px;
+  background: red;
+}
+
+header, footer {
+  padding: 30px;
+  background: orange;
+}
+
+/*Interpolacion*/
+div {
+  background: url("https://www.larepublica.com/mi-imagen.png");
+}
+
+/* MIXINGS*/
+div {
+  padding: 20px;
+  color: red;
+}
+
+div {
+  padding: 30px;
+  color: orange;
+}
+
+/*TAMAÑOS DE FUENTE*/
+/*colores*/
+/*ESPACIOS*/
+h1 {
+  font-size: 34px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+.space-m-4px {
+  margin: 4px;
+}
+
+.space-m-8px {
+  margin: 8px;
+}
+
+.space-m-12px {
+  margin: 12px;
+}
+
+.space-m-16px {
+  margin: 16px;
+}
+
+.space-m-20px {
+  margin: 20px;
+}
+
+.space-m-24px {
+  margin: 24px;
+}
+
+.color-red {
+  color: red;
+}
+
+.color-blue {
+  color: blue;
+}
+
+.color-green {
+  color: green;
+}
+
+.color-yellow {
+  color: yellow;
+}
+
+/*iteraciones con map*/
+.color-primary {
+  color: red;
+}
+
+.color-secundary {
+  color: blue;
+}
+
+.ejemplo.map {
+  /* con la funcion map-get del map font-sizes se obtiene el valor de h1*/
+  font-size: 34px;
+  color: red;
+}
+/*# sourceMappingURL=extend.css.map */

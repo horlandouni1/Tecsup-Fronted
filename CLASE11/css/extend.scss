@@ -1,0 +1,113 @@
+%boxRed{
+    padding: 20px;
+    background: red;
+}
+%otrosEstilos{
+    padding: 30px;
+    background: orange;
+}
+main{
+    @extend %boxRed;
+}
+header{
+    @extend %otrosEstilos;
+}
+footer{
+    @extend %boxRed;
+    @extend %otrosEstilos;
+}
+/*Interpolacion*/
+$url-base: 'https://www.larepublica.com';
+div{
+    background: url('#{$url-base}/mi-imagen.png');
+}
+/* MIXINGS*/
+@mixin box-color($padding:20px,$color:red){
+    padding: $padding;
+    color: $color;
+}
+div{
+    @include box-color();
+}
+div{
+    @include box-color(30px,orange );
+}
+
+/*TAMAÑOS DE FUENTE*/
+$font-size-h1:34px;
+$font-size-h2:24px;
+$font-size-h3:18px;
+$font-size-h4:16px;
+$font-size-base:13px;
+$font-sizes-map:(
+    h1:34px,
+    h2:24px,
+    h3:18px,
+    h4:16px,
+);
+/*colores*/
+$color-red:red;
+$color-blue:blue;
+$colors:red,blue,green,yellow;
+$color-branding:(
+    primary:red,
+    secundary:blue,
+);
+$color-semantic:(
+    danger:red,
+    warning:blue,
+    info:green,
+    succes:pink,
+);
+/*ESPACIOS*/
+$space-xs:4px;
+$space-sm:8px;
+$space-base:12px;
+$space-lg:16px;
+$space-xl:20px;
+$space-xxl:24px;
+$spaces:4px, 8px, 12px, 16px, 20px ,24px;
+@mixin font-title($tag-title) {
+    @if ($tag-title==h1){
+        font-size: $font-size-h1;
+    }@else if($tag-title==h2){
+        font-size: $font-size-h2;
+    }@else if($tag-title==h3){
+        font-size: $font-size-h3;
+    }@else if($tag-title==h4){
+        font-size: $font-size-h4;
+    }@else {
+        font-size: $font-size-base;
+    }
+}
+h1{
+    @include font-title(h1);
+}
+h2{
+    @include font-title(h2);
+}
+h3{
+    @include font-title(h3);
+}
+@each $space in $spaces{
+    .space-m-#{$space}{
+        margin:$space;
+    }
+}
+@each $color in $colors{
+    .color-#{$color}{
+        color: $color;
+    }
+}
+
+/*iteraciones con map*/
+@each $key,$value in $color-branding{
+    .color-#{$key}{
+        color:$value
+    }
+}
+
+.ejemplo.map{ /* con la funcion map-get del map font-sizes se obtiene el valor de h1*/
+    font-size:map-get($font-sizes-map,h1);
+    color:map-get($color-branding,primary);
+}

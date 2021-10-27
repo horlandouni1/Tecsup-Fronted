@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background: papayawhip;
+            width: 400px;
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            margin: 30px;
+        }
+        .container:hover .box{
+            transform: scale(1.2);
+        }
+        .box{
+            background: papayawhip;
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+        }
+        .box1{
+            background: lightcoral;
+            transition: transform 1s;
+        }
+        .box2{
+            background: salmon;
+            transition: transform 500ms;
+        }
+        .box3{
+            background: darksalmon;
+            transition: transform 1.5s;
+        }
+        .container2:hover .circle{
+            transform: translateX(200px);
+        }
+        .circle{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        .one{
+            background: yellow;
+            transition: transform 1s linear;
+            transition-delay: 0.5s;
+        }
+        .two{
+            background: fuchsia;
+            transition: transform 1s ease;
+            transition-delay: 1s;
+        }
+        .three{
+            background: orchid;
+            transition: transform 1s ease-in;
+            transition-delay: 1.5s;
+        }
+        .four{
+            background: violet;
+            transition: transform 1s ease-out;
+            transition-delay: 2s;
+        }
+        .five{
+            background: plum;
+            transition: transform 1s ease-in-out;
+            transition-delay: 0.5s;
+        }
+        .six{
+            background:lavender ;
+            transition: transform 1s linear;
+            transition-delay: 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+    </div>
+    <div class="container2">
+        <div class="circle one"></div>
+        <div class="circle teo"></div>
+        <div class="circle three"></div>
+        <div class="circle four"></div>
+        <div class="circle five"></div>
+        <div class="circle six"></div>
+    </div>
+
+</body>
+</html>

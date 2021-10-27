@@ -1,0 +1,22 @@
+@mixin button-size($width:43%,$height:44px){
+    width: $width;
+    height: $height;
+}
+button{
+    @include button-size();
+    color: white;
+    background: #2ECC71;
+    transition: transform 800ms;
+    &:hover{
+        transform:scale(1.2);
+    }
+}
+.button2{
+    @include button-size(92%,82px);
+    color: white;
+    background: #2ECC71;
+    transition: transform 800ms;
+    &:hover{
+        transform:scale(1.2);
+    }
+}

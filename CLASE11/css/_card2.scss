@@ -1,0 +1,192 @@
+@mixin prices($font-size:map-get($font-sizes,price),$color:map-get($colors, color-h2),$text-decoration:none){
+    font-size: $font-size;
+    color: $color;
+    text-decoration: $text-decoration;
+}
+@mixin tags($width:100px,$height:24px,$color:map-get($colors, color-card ),$background:map-get($colors, azul ),$border-radius:4px){
+    width: $width;
+    height: $height;
+    color: $color;
+    background: $background;
+    border-radius: $border-radius;
+}
+.card2{
+    background: #ffffff;
+    height: 716px;
+    margin: 0 auto;
+    border-radius: 16px;
+    transition: transform 600ms;
+    &:hover{
+        box-shadow: 10px 14px 22px -3px rgba(127,12,12,0.7);
+        transform: scale(1.1);
+    }
+    h2{
+        font-size: map-get($font-sizes, h2);
+        font-weight: map-get($weights, 400);
+        font-family: serif;
+        color: map-get($colors,color-h2);
+    }
+    img{
+        width: 100%;
+        height: 256px;
+        border-radius: 16px 16px 0px 0px;
+    }
+    .span{
+        display: inline-block;
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+    }
+    .title2{
+        width: 92%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+        margin: 0 auto;
+        div{
+            display: flex;
+            width: 88px;
+            height: 24px;
+            justify-content: end;
+            .span3{
+                background:map-get($colors, azul );
+                background-image: url('../imagenes/icons/wifi.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                margin-right: 8px;
+            }
+            .span4{
+                background: map-get($colors, azul);
+                background-image: url('../imagenes/icons/cubiertos.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            .span5{
+                background: map-get($colors, azul);
+                background-image: url('../imagenes/icons/swiming.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                margin-right: 8px;
+            }
+        }
+    }
+    .stars{
+        width: 92%;
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+        .tag{
+            margin-left: 16px;
+            @include tags();
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            width: 16px;
+            height: 15.2px;
+            margin-right: 8px;
+        }
+    }
+    .container-price-tags{
+        position: relative;
+        width: 92%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 30px;
+        .container-tag{
+            display: flex;
+            .tag2{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @include tags(88px,32px,map-get($colors,azul) , #D7D8D9, 4px)
+                border: 1px solid #D7D8D9;
+                margin-right: 12px;
+            }
+        }
+        .container-price{
+            position: absolute;
+            display: flex;
+            width: 140px;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            right: 0;
+            top: -40px;
+            .price3{
+                @include prices(map-get($font-sizes,price3),map-get($colors,color-h2),none);
+            }
+            .night1{
+                color: #081F32;
+                font-size: 20px;
+            }
+            .price4{
+                @include prices(map-get($font-sizes,price2),#B1B4B9,line-through);
+            }
+            .night2{
+                color: #B1B4B9;
+                font-size: 18px;
+            }
+        }
+
+
+    }
+    .paragraph{
+        width: 92%;
+        margin: 24px auto 24px;
+        font-size: map-get($font-sizes, p);
+        line-height: 25px;
+        font-family: 'Open Sans', sans-serif;
+        color: map-get($colors, color-parrafo);
+    }
+    .save{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 146px;
+        height: 29px;
+        margin: 0 auto;
+        font-size: map-get($font-sizes, order );
+        color: map-get($colors, color-hoja2 );
+    }
+    button{
+        margin-left: 4%;
+        margin-top: 10px;
+    }
+}
+.card2{
+    width: 45%;
+}
+.card3{
+    width: 48%;
+}
+@media (max-width:1000px){
+    .container{
+        display: block;
+    }
+    .card2{
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    .card{
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .card2{
+        .container-price-tags{
+            .container-price {
+                top: -12px;
+                .price3{
+                    font-size: 25px;
+                }
+                .price4{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}

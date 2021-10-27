@@ -1,0 +1,12 @@
+body{
+    display: flex;
+    justify-content:center;
+    background:map-get($colors, color-fondo) ;
+}
+.wrapper{
+    background:#EFF0F3;
+    width:1256px;
+    > .container{
+        margin-bottom: 96px;
+    }
+}

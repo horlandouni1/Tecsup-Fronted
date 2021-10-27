@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body{
+            display: flex;
+            justify-items: center;
+            align-content: center;
+            text-align: center;
+        }
+        *{
+            font-size: 35px;
+        }
+        .container{
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border: 5px solid hotpink;
+            perspective: 100px;
+        }
+        .item{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: papayawhip;
+            border: 3px solid hotpink;
+            opacity: 0.5;
+            transform-style: preserve-3d;
+            transform: rotateX(40deg);
+        }
+        .container2{
+            position: relative;
+            width: 100px;
+            height: 100px;
+            perspective-origin: 150% 150%;
+            perspective: 250px;
+            transform-style: preserve-3d;
+            left: 45%;
+        }
+        .cara{
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            border: 1px solid black;
+            color: white;
+            text-align: center;
+            opacity: 0.7;
+
+        }
+        .container2 .front{
+            background: lightcoral;
+            transform: translateZ(50px);
+        }
+        .container2 .top{
+            background:deeppink;
+            transform: rotateX(90deg) translateZ(50px);
+        }
+        .container2 .right{
+            background: blue;
+            transform: rotateY(90deg) translateZ(50px);
+        }
+        .container2 .left{
+            background: violet;
+            transform:rotateY(-90deg) translateZ(50px);
+        }
+        .container2 .botton{
+            background: yellow;
+            transform: rotateX(-90deg) translateZ(50px);
+        }
+        .container2 .back{
+            background: yellowgreen;
+            transform: rotateY(180deg) translateZ(50px);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item"></div>
+    </div><br><br><br><br><br>
+    <div class="container2">
+        <div class="cara front">1</div>
+        <div class="cara back">2</div>
+        <div class="cara right">3</div>
+        <div class="cara left">4</div>
+        <div class="cara top">5</div>
+        <div class="cara botton">6</div>
+    </div>
+</body>
+</html>

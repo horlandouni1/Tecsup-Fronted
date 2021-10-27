@@ -1,0 +1,484 @@
+button {
+  width: 43%;
+  height: 44px;
+  color: white;
+  background: #2ECC71;
+  -webkit-transition: -webkit-transform 800ms;
+  transition: -webkit-transform 800ms;
+  transition: transform 800ms;
+  transition: transform 800ms, -webkit-transform 800ms;
+}
+
+button:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.button2 {
+  width: 92%;
+  height: 82px;
+  color: white;
+  background: #2ECC71;
+  -webkit-transition: -webkit-transform 800ms;
+  transition: -webkit-transform 800ms;
+  transition: transform 800ms;
+  transition: transform 800ms, -webkit-transform 800ms;
+}
+
+.button2:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #EFF0F3;
+}
+
+.wrapper {
+  background: #EFF0F3;
+  width: 1256px;
+}
+
+.wrapper > .container {
+  margin-bottom: 96px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  position: relative;
+  background: #ffffff;
+  width: 30%;
+  height: 560px;
+  margin: 0 auto;
+  border-radius: 16px;
+  -webkit-transition: -webkit-transform 600ms;
+  transition: -webkit-transform 600ms;
+  transition: transform 600ms;
+  transition: transform 600ms, -webkit-transform 600ms;
+}
+
+.card:hover {
+  -webkit-box-shadow: 10px 14px 22px -3px rgba(127, 12, 12, 0.7);
+          box-shadow: 10px 14px 22px -3px rgba(127, 12, 12, 0.7);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.card h2 {
+  font-size: 24px;
+  font-family: serif;
+  color: #081F32;
+}
+
+.card .span {
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+}
+
+.card img {
+  width: 100%;
+  max-height: 280px;
+  border-radius: 16px 16px 0px 0px;
+}
+
+.card .span6 {
+  position: absolute;
+  background: #FFFFFF;
+  background-image: url("../imagenes/icons/i.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 16px;
+  right: 24px;
+}
+
+.card .title {
+  width: 92%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.card .title div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 88px;
+  height: 24px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.card .title div .span1 {
+  background: #F8593B;
+  background-image: url("../imagenes/icons/fuego.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 8px;
+}
+
+.card .title div .span2 {
+  background: #FFC22B;
+  background-image: url("../imagenes/icons/hoja1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card .title div .span3 {
+  background: #2ECC71;
+  background-image: url("../imagenes/icons/hoja2.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 8px;
+}
+
+.card .paragraph {
+  width: 92%;
+  height: 75px;
+  margin: 24px auto 24px;
+  font-size: 16px;
+  line-height: 25px;
+  font-family: 'Open Sans', sans-serif;
+  color: #6E798C;
+}
+
+.card .calories {
+  width: 92%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 16px;
+  font-weight: 700;
+  color: #A5ADBB;
+}
+
+.card .prices {
+  width: 92%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .prices div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .prices div h3 {
+  margin-right: 10px;
+}
+
+.card .prices div .price1 {
+  font-size: 28px;
+  color: #081F32;
+  text-decoration: none;
+}
+
+.card .prices div .price2 {
+  font-size: 20px;
+  color: #F8593B;
+  text-decoration: line-through;
+}
+
+.card2 {
+  background: #ffffff;
+  height: 716px;
+  margin: 0 auto;
+  border-radius: 16px;
+  -webkit-transition: -webkit-transform 600ms;
+  transition: -webkit-transform 600ms;
+  transition: transform 600ms;
+  transition: transform 600ms, -webkit-transform 600ms;
+}
+
+.card2:hover {
+  -webkit-box-shadow: 10px 14px 22px -3px rgba(127, 12, 12, 0.7);
+          box-shadow: 10px 14px 22px -3px rgba(127, 12, 12, 0.7);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.card2 h2 {
+  font-size: 24px;
+  font-family: serif;
+  color: #081F32;
+}
+
+.card2 img {
+  width: 100%;
+  height: 256px;
+  border-radius: 16px 16px 0px 0px;
+}
+
+.card2 .span {
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+}
+
+.card2 .title2 {
+  width: 92%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.card2 .title2 div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 88px;
+  height: 24px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.card2 .title2 div .span3 {
+  background: #007AE9;
+  background-image: url("../imagenes/icons/wifi.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 8px;
+}
+
+.card2 .title2 div .span4 {
+  background: #007AE9;
+  background-image: url("../imagenes/icons/cubiertos.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card2 .title2 div .span5 {
+  background: #007AE9;
+  background-image: url("../imagenes/icons/swiming.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 8px;
+}
+
+.card2 .stars {
+  width: 92%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card2 .stars .tag {
+  margin-left: 16px;
+  width: 100px;
+  height: 24px;
+  color: #FFFFFF;
+  background: #007AE9;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card2 .stars img {
+  width: 16px;
+  height: 15.2px;
+  margin-right: 8px;
+}
+
+.card2 .container-price-tags {
+  position: relative;
+  width: 92%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.card2 .container-price-tags .container-tag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card2 .container-price-tags .container-tag .tag2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 88px;
+  height: 32px;
+  color: #007AE9;
+  background: #D7D8D9;
+  border-radius: 4px;
+  border: 1px solid #D7D8D9;
+  margin-right: 12px;
+}
+
+.card2 .container-price-tags .container-price {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 140px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  right: 0;
+  top: -40px;
+}
+
+.card2 .container-price-tags .container-price .price3 {
+  font-size: 48px;
+  color: #081F32;
+  text-decoration: none;
+}
+
+.card2 .container-price-tags .container-price .night1 {
+  color: #081F32;
+  font-size: 20px;
+}
+
+.card2 .container-price-tags .container-price .price4 {
+  font-size: 20px;
+  color: #B1B4B9;
+  text-decoration: line-through;
+}
+
+.card2 .container-price-tags .container-price .night2 {
+  color: #B1B4B9;
+  font-size: 18px;
+}
+
+.card2 .paragraph {
+  width: 92%;
+  margin: 24px auto 24px;
+  font-size: 16px;
+  line-height: 25px;
+  font-family: 'Open Sans', sans-serif;
+  color: #6E798C;
+}
+
+.card2 .save {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 146px;
+  height: 29px;
+  margin: 0 auto;
+  font-size: 14px;
+  color: #2ECC71;
+}
+
+.card2 button {
+  margin-left: 4%;
+  margin-top: 10px;
+}
+
+.card2 {
+  width: 45%;
+}
+
+.card3 {
+  width: 48%;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    display: block;
+  }
+  .card2 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  .card {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .card2 .container-price-tags .container-price {
+    top: -12px;
+  }
+  .card2 .container-price-tags .container-price .price3 {
+    font-size: 25px;
+  }
+  .card2 .container-price-tags .container-price .price4 {
+    font-size: 15px;
+  }
+}
+/*# sourceMappingURL=styles7.css.map */

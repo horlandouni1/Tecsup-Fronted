@@ -1,0 +1,63 @@
+/* COLOR*/
+/* FONT-FAMILY*/
+body {
+  color: pink;
+  font-size: 13px;
+  font-family: arial;
+}
+
+a {
+  color: pink;
+}
+
+p {
+  font-size: 13px;
+  font-family: "arial";
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "verdana";
+}
+
+/*Header*/
+header:hover {
+  background: blue;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header a:hover {
+  background: brown;
+}
+
+header ul {
+  padding: 20px;
+}
+
+header > li {
+  color: red;
+}
+
+header .nombre-clase {
+  color: pink;
+}
+
+header ul li {
+  background: blue;
+  margin-right: 20px;
+}
+
+header ul li:last-child {
+  margin-right: 0;
+}
+
+header ul li:first-child {
+  margin-left: 20px;
+}
+
+header ul li:hover {
+  background: green;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,116 @@
+@mixin prices($font-size:map-get($font-sizes,price),$color:map-get($colors, color-h2),$text-decoration:none){
+    font-size: $font-size;
+    color: $color;
+    text-decoration: $text-decoration;
+}
+.card{
+    position: relative;
+    background: #ffffff;
+    width: 30%;
+    height: 560px;
+    margin: 0 auto;
+    border-radius: 16px;
+    transition: transform 600ms;
+    &:hover{
+        box-shadow: 10px 14px 22px -3px rgba(127,12,12,0.7);
+        transform: scale(1.1);
+    }
+    h2{
+        font-size: map-get($font-sizes, h2);
+        font-weight: map-get($weights, 400);
+        font-family: serif;
+        color: map-get($colors,color-h2);
+    }
+    .span{
+        display: inline-block;
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+    }
+    img{
+        width: 100%;
+        max-height: 280px;
+        border-radius: 16px 16px 0px 0px;
+    }
+    .span6{
+        position: absolute;
+        background:map-get($colors, color-card);
+        background-image: url('../imagenes/icons/i.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        top: 16px;
+        right: 24px;
+    }
+    .title{
+        width: 92%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+        margin: 0 auto;
+        div{
+            display: flex;
+            width: 88px;
+            height: 24px;
+            justify-content: end;
+            .span1{
+                background:map-get($colors, color-fuego );
+                background-image: url('../imagenes/icons/fuego.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                margin-right: 8px;
+            }
+            .span2{
+                background: map-get($colors, color-hoja1);
+                background-image: url('../imagenes/icons/hoja1.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            .span3{
+                background: map-get($colors, color-hoja2);
+                background-image: url('../imagenes/icons/hoja2.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                margin-right: 8px;
+            }
+        }
+    }
+    .paragraph{
+        width: 92%;
+        height: 75px;
+        margin: 24px auto 24px;
+        font-size: map-get($font-sizes, p);
+        line-height: 25px;
+        font-family: 'Open Sans', sans-serif;
+        color: map-get($colors, color-parrafo);
+    }
+    .calories{
+        width: 92%;
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-between;
+        font-size: map-get($font-sizes, p);
+        font-weight: map-get($weights, w3 );
+        color: map-get($colors, color-calorias);
+    }
+    .prices{
+        width: 92%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        div{
+            display: flex;
+            align-items: center;
+            h3{
+                margin-right: 10px;
+            }
+            .price1{
+                @include prices();
+            }
+            .price2{
+                @include prices(map-get($font-sizes,price2),map-get($colors,color-fuego),line-through);
+            }
+        }
+    }
+}
