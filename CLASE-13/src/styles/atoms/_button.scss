@@ -1,0 +1,36 @@
+.btn{
+    display: flex;
+    width: 70px;
+    height: 26px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+.btn-primary{
+    border: 1px solid #334680;
+    color: #334680;
+    background: #FFFFFF;
+}
+.btn-secundary{
+    color: #B9BDCF;
+    background: #FFFFFF;
+    &:hover{
+        background: #1E86FF;
+        color: #FFFFFF;
+    }
+}
+.btn-terciary{
+    background: #1E86FF;
+    border: none;
+    color: #FFFFFF;
+}
+.btn1{
+    font-size: 16px;
+    min-width: 10%;
+    border: none;
+    height: 47px;
+}
+.btn-ssm{
+    width: 36px;
+    height: 36px;
+}

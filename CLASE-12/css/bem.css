@@ -1,0 +1,59 @@
+.nav {
+  background: blue;
+  padding: 20px;
+}
+
+.nav a {
+  color: white;
+}
+
+.nav__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  list-style: none;
+}
+
+.nav__li {
+  margin: 0 10px;
+}
+
+.nav--light {
+  background: pink;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: orange;
+  padding: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo {
+  font-size: 24px;
+}
+
+.header__nav {
+  background: yellow;
+}
+
+.header--dark {
+  background: black;
+  color: white;
+}
+
+.header--dark a {
+  color: white;
+}
+/*# sourceMappingURL=bem.css.map */

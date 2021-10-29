@@ -1,0 +1,36 @@
+.tarjeta{
+    width: 98%;
+    height: 114px;
+    display: flex;
+    justify-content: space-between;
+    background:white;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    &:hover{
+        box-shadow: 10px 11px 26px -5px rgba(0,0,0,0.75);
+    }
+    &__left{
+        align-items: center;
+        display: flex;
+        width: 60%;
+        height: 95%;
+        img{
+            margin-right: 16px;
+        }
+        .job{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+    &__right{
+        position: relative;
+        width: 35%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        img{
+            margin-right: 5px;
+        }
+    }
+}

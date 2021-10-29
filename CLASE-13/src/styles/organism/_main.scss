@@ -1,0 +1,24 @@
+.main{
+    width: 100%;
+    display: flex;
+    float: right;
+    flex-wrap: wrap;
+    &__left{
+        width: 30%;
+        .search-form{
+            width: 50%;
+            margin-bottom: 10px;
+        }
+    }
+    &__right{
+        width: 70%;
+        >.tarjeta{
+            margin-top: 15px;
+        }
+        .main__pages{
+            width: 98%;
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}

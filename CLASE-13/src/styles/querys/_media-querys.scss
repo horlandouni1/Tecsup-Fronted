@@ -1,0 +1,52 @@
+@media (max-width: 1000px){
+    .tarjeta{
+        height: auto;
+    }
+}
+
+@media (max-width: 640px){
+    .header{
+        width: 100%;
+    }
+    .main{
+        display: block;
+        &__left{
+            width: 100%;
+            .form{
+                width: 80%;
+                margin: 0 auto;
+            }
+
+        }
+        &__right{
+            width: 100%;
+
+        }
+    }
+
+    .tarjeta{
+        width: 100%;
+    }
+}
+@media (max-width: 450px){
+
+    .tarjeta__right{
+        width: 35%;
+        padding: 0 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .iconAndDescription{
+        display: block;
+    }
+    .main__right{
+        .main__pages{
+            justify-content: center;
+        }
+    }
+    .buttons-pages{
+        width: 100%;
+    }
+}

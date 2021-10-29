@@ -1,0 +1,35 @@
+.btn {
+  min-width: 120px;
+  padding: 10px 15px;
+  border: 1px solid gray;
+  background-color: gray;
+  font-size: 14px; }
+
+.btn-primary {
+  background-color: orange;
+  border-color: orange; }
+
+.btn-secundary {
+  background-color: purple;
+  border-color: purple;
+  color: white; }
+
+.btn-sm {
+  font-size: 12px;
+  min-width: 800px;
+  padding: 8px 10px; }
+
+.alert {
+  background-color: grey;
+  padding: 20px;
+  font-size: 14px;
+  border: 1px solid grey;
+  color: white; }
+
+.alert-success {
+  background-color: green;
+  border-color: green; }
+
+.alert-error {
+  background-color: red;
+  border-color: red; }
