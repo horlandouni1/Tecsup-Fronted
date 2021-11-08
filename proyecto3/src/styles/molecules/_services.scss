@@ -1,0 +1,72 @@
+.services{
+    width: 98%;
+    height: 100vh;
+    margin-top: 50px;
+    h2{
+        font-family: 'Poppins', sans-serif;
+        color: #0098EF;
+        font-weight: 600;
+        font-size: 28px;
+        margin-bottom: 30px;
+        padding-left: 20px;
+    }
+    a{
+        text-decoration: none;
+    }
+    &__container{
+        width: 70%;
+        height: 90%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+        gap: 20px;
+        margin: 0 auto;
+    }
+    &__label{
+        font-family: 'Poppins', sans-serif;
+        padding: 10px;
+        background: #D1FFA2;
+        color: #5A0CB0;
+        font-weight: 500;
+        font-size: 24px;
+        border-radius: 8px 0px 0px 8px;
+    }
+    &__card{
+        background: #00CF95;
+        position: relative;
+        border-radius: 8px;
+        img{
+            position: absolute;
+            left: 10%;
+            top: 10%;
+        }
+        div{
+            position: absolute;
+            bottom: 15%;
+            right: 0;
+        }
+        &:hover{
+            border:3px solid #5A0CB0;
+            img{
+                fill: #5A0CB0 !important;
+            }
+            .services__label{
+                background: #5A0CB0;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
+@media(max-width:600px){
+    .services{
+        height: auto;
+    }
+    .services__container{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,1fr);
+    }
+    .services__card{
+        padding: 90px 0;
+    }
+}

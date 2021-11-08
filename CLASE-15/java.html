@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT</title>
+</head>
+<body>
+    <script>
+        let namee='Horlando';
+        console.log(namee);
+    </script>
+    <script>
+        function fn(){
+            console.log(arguments.length);
+            if (arguments.length>2){
+                console.log('no se puede agregar mas de dos elementos a la funcion');
+            }
+        }
+        fn(2,3,4,2,'sebastian');
+        function fn2(a, ...b){
+            console.log('a fn2',a);
+            console.log('b fn2',b);
+        }
+        fn2(1,2,4,5,6,7,8);
+        //console log
+
+        console.log('SUMA',2);
+        console.log('%c my heavens!', 'background:#222 ;color:#bada55');
+        console.warn("esto es un warning");
+        console.error("esto es un error");
+        console.info("Hola mundo");
+        console.log("acaaaa");
+    </script>
+    <script src="./src/variables.js"></script>
+    <script src="./src/condicionales.js"></script>
+    <script src="./src/estructura_de_datos.js"></script>
+</body>
+</html>

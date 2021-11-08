@@ -1,0 +1,31 @@
+.nav{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 40px;
+    li{
+        list-style: none;
+        margin-right: 15px;
+
+        a{
+            text-decoration: none;
+            font-family: 'Raleway', sans-serif;
+            font-size: 14px;
+            &::selection{
+                color: #832FDA;
+                text-decoration: underline;
+            }
+            &:hover{
+                color: brown;
+                cursor: pointer;
+            }
+        }
+    }
+}
+@media(max-width:600px){
+    .nav{
+        width: 80%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
