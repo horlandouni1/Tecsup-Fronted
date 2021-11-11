@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+}
+header{
+    background: #5500C1;
+    padding: 20px;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 25px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+    height: 10%;
+}
+main{
+    height: auto;
+}
+.container_form{
+    width: 60%;
+    margin: 0 auto 40px;
+}
+form{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.container_form input{
+    width: 49%;
+    padding: 10px;
+    border: 1px solid #009B9B;
+    margin-bottom: 15px;
+}
+.container_form button{
+    margin: 0 auto 20px;
+    width: 45%;
+    padding: 10px;
+    background: #5500C1;
+    font-size: 14px;
+    color: white;
+}
+.app{
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 0 auto;
+    gap: 20px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:1px solid #969696;
+    padding: 10x;
+    border-radius: 4px;
+    position: relative;
+    background: white;
+}
+.card:hover{
+    box-shadow: 0 0 10px #5500C1;
+
+}
+.card img{
+    width: 60%;
+    border-radius: 100%;
+    margin-bottom: 20px;
+    border: 3px solid greenyellow;
+
+}
+.card h2{
+    font-size: 23px;
+    color: #000000;;
+    margin-bottom: 4px;
+}
+.card h3{
+    font-size: 15px;
+    color: #5500C1;
+    margin-bottom: 10px;
+}
+.card h4{
+    font-size: 15px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+.card div{
+    display: flex;
+    align-items: center;
+}
+.card span img{
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    border: none;
+}
+.card a{
+    text-decoration: none;
+    color: #000000;
+}
+.card button{
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background: #FF4040;
+    color: #FFFFFF;
+    border:1px solid red;
+    cursor: pointer;
+}
+footer{
+    background: #5500C1;
+    font-family: Arial;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    margin-top: 30px;
+}
+@media(max-width:750px){
+    .app{
+        width: 70%;
+        grid-template-columns: repeat(2,1fr);
+        gap: 25px;
+    }
+    .container_form{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+}
+@media(max-width:500px){
+    .container_form{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .container_form input{
+        width: 98%;
+    }
+    .app{
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+}

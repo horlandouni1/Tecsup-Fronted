@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        form input{
+            width: 100%;
+            padding: 10px;
+            transition: all 0.5 ease;
+            border-radius: 8px;
+            border: 1px solid #cacaca;
+        }
+        form input:focus{
+            outline: none;
+            box-shadow: 0 0 3px #dadada;
+        }
+        form input:focus:required{
+            border-color: red;
+        }
+        form div{
+            padding: 10px;
+        }
+        form button{
+            width: 100%;
+            padding: 10px;
+            background: green;
+            color: white;
+            border: 1px solid green;
+        }
+        h1{
+            text-align: center;
+            margin: 20px 0 10px;
+        }
+        .app{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-gap: 20px;
+            padding: 20px;
+            border:1px solid #cdcdcd;
+            margin: 15px;
+            border-radius: 4px;
+            background: #ebebeb;
+        }
+        .card{
+            border:1px solid #cdcdcd;
+            padding: 10x;
+            border-radius: 4px;
+            position: relative;
+            background: white;
+        }
+        .card:hover{
+            box-shadow: 0 0 10px rgb(161,161,161);
+
+        }
+        .card h2{
+            font-size: 13px;
+            color: #616161;
+            margin-bottom: 4px;
+        }
+        .card h2 span{
+            color: black;
+        }
+        .card img{
+            width: 100%;
+        }
+        .card button{
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            background: red;
+            color: white;
+            border:1px solid red;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>FORMULARIO</h1>
+    <form action="">
+        <div>
+            <input class="js_name" type="text" placeholder="Nombre" required>
+        </div>
+        <div>
+            <input class="js_lastname" type="text" placeholder="Apellido" required>
+        </div>
+        <div>
+            <input class="js_age" type="number" placeholder="Edad" required>
+        </div>
+        <div>
+            <input class="js_photo" type="text" placeholder="url-fotografia" required>
+        </div>
+        <div>
+            <button>Enviar</button>
+        </div>
+    </form>
+    <div id="app" class="app"></div>
+    <script src="./src/dynamic-dom.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .dropdown{
+        background:pink;
+        padding:20px;
+        border-radius:8px;
+        list-style:none;
+        display: none;
+      }
+      li{
+        padding: 10px;
+        border-radius: 4px;
+      }
+      li:hover{
+        background: white;
+      }
+    </style>
+</head>
+<body>
+    <div id="div"></div>
+    <button>ABRIR DROPDOWN</button>
+    <button class="js_quit">QUITAR EVENTO</button>
+    <ul class="dropdown js_dropdown">
+      <li>ITEM UNO</li>
+      <li>ITEM DOS</li>
+      <li>ITEM TRES</li>
+      <li>ITEM CUATRO</li>
+    </ul>
+    <input type="text">
+    <input type="checkbox">
+    <form>
+      <input type="text" class="js_name" placeholder="INGRESA TU NOMBRE" required>
+      <input type="text" class="js_lastname" placeholder="INGRESA TU APELLIDO" required>
+      <button>ENVIAR</button>
+    </form>
+    <a href="">LINK</a>
+    <script src="./src/eventos.js"></script>
+</body>
+</html>
