@@ -4,7 +4,9 @@
     margin: 0;
 }
 body{
+    display: flex;
     height: 100vh;
+    flex-direction: column;
 }
 header{
     background: #5500C1;
@@ -19,6 +21,7 @@ header{
 }
 main{
     height: auto;
+    flex-grow: 1;
 }
 .container_form{
     width: 60%;
