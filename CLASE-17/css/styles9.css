@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    margin-top: 100px;
+    width: 40%;
+}
+.homework{
+    margin: 0 auto;
+    width: 98%;
+    padding: 10px;
+    border: 1px solid #000000;
+}
+.container-add{
+    display: flex;
+    width: 98%;
+    margin: 0 auto;
+    margin: 15px 0;
+}
+.add{
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    width: 30px;
+    height: 30px;
+    background: #B47AEA;
+    color: white;
+    border-radius: 100%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.add_description{
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #B47AEA;
+}
+.container-homeworks{
+    width: 98%;
+    margin: 0 auto;
+}
+.container-homework{
+    display: flex;
+    align-items: center;
+}
+.container-homework button{
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
+.container-homework .check{
+    background: #1E9CEA;
+    border: 2px solid #1E9CEA;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+}
+.container-homework h3{
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}

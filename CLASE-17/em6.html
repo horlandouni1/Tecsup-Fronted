@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fn(a,b) {
+            return a+b;
+        }
+        const fnArrow=(a,b) => a+b;
+        console.log(fn(2,3));
+        console.log(fnArrow(3,4));
+
+        //parametros por defecto
+        function getData(name='Horlando',lastName='Espinoza',age=23){
+            return `${name} ${apellido} ${age}`
+        }
+
+        //parametros rest
+        function suma(a,b,...c){
+            let resultado=a+b;
+            c.forEach((n) => {
+                resultado=resultado+n;
+            })
+            return resultado;
+        }
+        console.log(suma(1,2,3,4,5,6,7,8,9,10))
+        //spreadOperator
+        const datos=["hola","como","estas","jose"];
+        console.log(...datos);
+        console.log(datos[0],datos[1],datos[2],datos[3]);
+        function limpiarEspacios(...cadenas){
+            for(let i=0; i<cadenas.length;i++){
+                cadenas[i]=cadenas[i].trim();
+            }
+            return cadenas;
+        }
+        const cadenascol=['hola   ','algo  ','mas  ','da da d d'];
+        let cadenaLimpia=limpiarEspacios(...cadenascol);
+        console.log(cadenaLimpia);
+        const col=[0,1,2,3,4];
+        const col2=[...col,5,6];
+        console.log('col',col);
+        console.log('col',col2);
+
+        const obj={
+            name:'sebas',
+            lastName:'yabiku'
+        }
+        const obj2={
+            ...obj,
+            age:34
+        }
+        console.log('obj',obj);
+        console.log('obj2',obj2);
+        //objects
+        function userObject(name="Horlando",lastname="Espinoza",age=23){
+            return{
+                name,
+                lastName,
+                age
+            }
+        }
+        const user=userObject('sebastian','yabiku',34);
+        const user2=userObject('Marco','Sifuentes',31);
+
+        //metodos concisos
+        const obj3={
+            fn: function(){
+                console.log(this);
+            }
+        }
+        obj3.fn();
+        const obj4={
+            fn(){
+                console.log(this);
+            }
+        }
+        obj4.fn()
+
+        //copiar objetos con error
+        let valorUno='Sebastian';
+        let valorDos=valorUno;
+        valorUno='Jose';
+        console.log('valorDos',valorDos);
+        console.log('valorUno',valorUno);
+
+        let objOriginal={
+            name:'sebastian'
+        }
+        let objCopia=objOriginal;
+        objOriginal.name='Jose';
+        console.log(objCopia.name);
+        console.log(objOriginal.name);
+
+        //copia objetos de manera correcta
+
+        let objOriginal2={
+            name:'Horlando'
+        }
+        let objCopia2=Object.assign({},objOriginal2)
+        let objCopia2={...objOriginal2};
+        objOriginal2.name = 'JOSE';
+        console.log(objCopia2.name);
+        console.log(objOriginal2.name);
+
+        //Destructuring
+        const objDes={
+            name:'Sebas',
+            lastname:'yabiku',
+            age:18,
+            data:{
+                address:'siempre viva',
+                url:'www.googlr.com'
+            }
+        }
+        objDes.name //sebas
+        objDes.lastname
+
+        let{
+            name,
+            lastname,
+            age,
+            data:{
+                address,
+                url: urlcambiado
+            }
+        } = objDes
+
+        console.log(name);
+        console.log(lastname);
+        console.log(age)
+        console.log('address',address);
+        console.log('url',urlcambiado);
+        //destructuring array
+        const arr=[0,14,3,4,5,6];
+        const arr2=[...arr];
+        console.log(arr2);
+        arr.push(5)
+        console.log('arr',arr);
+        console.log('arr3',arr2);
+        let=[
+            firstNumber,
+            secondNumber,
+            ,
+            ,
+            ,
+            ,
+            six
+        ]=arr;
+        console.log(firstNumber);
+        console.log(secondNumber);
+        console.log(six);
+    </script>
+</body>
+</html>

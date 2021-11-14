@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles10.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b5b09d2e7e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="card js_card">
+            <div class="card__front">
+                <div class="container-chip-visa">
+                    <div class="chip">
+                    </div>
+                    <div><i class="fab fa-cc-visa"></i></div>
+                </div>
+                <div class="container-numbers">
+                    <div class="numbers js_textn1"></div>
+                    <div class="numbers js_textn2"></div>
+                    <div class="numbers js_textn3"></div>
+                    <div class="numbers js_textn4"></div>
+                </div>
+                <div class="container-holder-date">
+                    <div>
+                        <h3>CARD HOLDER</h3>
+                        <div class="values js_holder_text"></div>
+                    </div>
+                    <div>
+                        <h3>EXPIRES</h3>
+                        <div class="expires">
+                            <div class="values js_expires_text_day"></div>
+                            <div class="values js_expires_text_year"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card__back js_card_back">
+                <div class="color"></div>
+                <div class="container-cvv">
+                    <h3>CVV</h3>
+                    <div class="Cvv js_cvv_text"></div>
+                </div>
+                <div><i class="fab fa-cc-visa"></i></div>
+            </div>
+        </div>
+        <form action="">
+            <h2>CARD NUMBER</h2>
+            <div class="inputs_cardNumber">
+                <input type="number" class="input_number js_number1" name="in1" required data-length="4">
+                <input type="number" class="input_number js_number2" name="in2" required data-length="4">
+                <input type="number" class="input_number js_number3" name="in3" required data-length="4">
+                <input type="number" class="input_number js_number4" name="in4" required data-length="4">
+            </div>
+            <h2>CARD HOLDER</h2>
+            <div class="inputs_cardHolder">
+                <input type="text" class="input_holder js_holder">
+            </div>
+            <div class="container-date-cvv">
+                <div>
+                    <h2>EXPIRATION DATE</h2>
+                    <select name="day-date" id="day-date">
+                        <option value="" disabled selected>day</option>
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                    <select name="year-date" id="year-date">
+                        <option value="" disabled selected>year</option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                    </select>
+                </div>
+                <div>
+                    <h2>CVV</h2>
+                    <input type="number" class="js_cvv" maxlength="3">
+                </div>
+            </div>
+            <button>SUBMIT</button>
+        </form>
+    </div>
+    <script src="./javascript/ejercicio-10.js"></script>
+</body>
+</html>
